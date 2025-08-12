@@ -1,0 +1,186 @@
+
+/* 웹 */
+@media screen and (min-width:910px) {
+
+    section.BOX {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-box {
+        width: 60%;
+        max-width: 600px;
+        min-height: 650px;
+        background-color: rgba(40, 47, 61, 0.95);
+        margin: 100px 0 150px 0;
+        position: relative;
+        border-radius: 10px;
+        padding: 50px 80px;
+    }
+
+    .login-box>h1 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-size: 80px;
+        font-weight: 100;
+        color: lightgray;
+    }
+
+    .ID {
+        font-size: 28px;
+        color: lightgray;
+        margin-bottom: 20px;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .password {
+        font-size: 28px;
+        color: lightgray;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .input-field {
+        background-color: rgb(233, 233, 233);
+        border-radius: 5px;
+        width: 100%;
+        height: 50px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .login-btn {
+        width: 100%;
+        height: 60px;
+        font-size: 23px;
+        padding: 3px 15px;
+        color: white;
+        background-color: rgb(140, 105, 153);
+        border-radius: 8px;
+        margin-top: 50px;
+        text-align: center;
+        border: none;
+    }
+
+    .login-btn>button {
+        background: none;
+        border: 0;
+        margin: 10px;
+        color: white;
+        font-size: 25px;
+    }
+
+    .login-btn:hover {
+        background-color: rgb(152, 116, 164);
+    }
+
+    .links {
+        margin-top: 10px;
+        font-size: 20px;
+        color: lightgray;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .links a {
+        color: lightgray;
+    }
+}
+
+
+/* 스마트폰 */
+@media screen and (max-width:910px) {
+
+    section.BOX {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .login-box {
+        width: 80%;
+        min-height: 650px;
+        background-color: rgba(40, 47, 61, 0.95);
+        margin: 200px 0 100px 0;
+        position: relative;
+        border-radius: 10px;
+        padding: 50px 80px;
+    }
+
+    .login-box>h1 {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 40px;
+        font-size: 60px;
+        font-weight: 100;
+        color: lightgray;
+    }
+
+    .ID {
+        font-size: 23px;
+        color: lightgray;
+        margin-bottom: 20px;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    .password {
+        font-size: 23px;
+        color: lightgray;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .input-field {
+        background-color: rgb(233, 233, 233);
+        border-radius: 5px;
+        width: 100%;
+        height: 50px;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .login-btn {
+        width: 100%;
+        height: 60px;
+        font-size: 20px;
+        padding: 3px 15px;
+        color: white;
+        background-color: rgb(140, 105, 153);
+        border-radius: 8px;
+        margin-top: 50px;
+        text-align: center;
+        border: none;
+    }
+
+    .login-btn>button {
+        background: none;
+        border: 0;
+        margin: 10px;
+        color: white;
+    }
+
+    /* 마우스 올리면 색 변환 */
+    .login-btn:hover {
+        background-color: rgb(152, 116, 164);
+    }
+
+    .links {
+        margin-top: 10px;
+        font-size: 18px;
+        color: lightgray;
+        text-decoration: underline;
+        text-align: center;
+    }
+
+    .links a {
+        color: lightgray;
+    }
+}

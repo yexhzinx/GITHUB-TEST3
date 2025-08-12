@@ -1,0 +1,632 @@
+/* 정지원 개인 스타일 태그 */
+
+@media(min-width: 910px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    /* nav */
+    .nav_area {
+        position: relative;
+        /* z-index: 1; */
+
+        top: 5px;
+        /* left: auto; */
+        height: 259px;
+        width: 100%;
+        top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .nav_area>.nav {
+        display: flex;
+        margin-top: 63px;
+        height: 75px;
+        width: 1262px;
+        z-index: 2;
+    }
+
+
+    .nav_area>.nav_color {
+        position: absolute;
+        border: 1px solid;
+        border-radius: 10px;
+        border-color: transparent;
+        margin-top: 63px;
+        height: 75px;
+        width: 1262px;
+        background-image: linear-gradient(to right, rgb(10, 12, 37), rgb(77, 91, 119));
+        opacity: 0.9;
+    }
+
+    .nav_area>.nav>.nav_left {
+        width: 940px;
+        height: 75px;
+        display: flex;
+        /* background-color: aqua; */
+        justify-content: space-evenly;
+        padding: 0 10px 0 25px;
+        margin-right: 15px;
+    }
+
+    .nav_area>.nav>.nav_left>.nav_font {
+        font-size: 20px;
+        color: white;
+        margin: 1px;
+        padding: 20px 0 0 0;
+        opacity: 1;
+        display: flex;
+
+    }
+
+    .nav_area>.nav>.nav_right {
+        width: 340px;
+        height: 73px;
+        display: flex;
+        margin-top: 1px;
+        align-items: center;
+    }
+
+    .nav_area>.nav>.nav_right>.search_box {
+
+        width: 300px;
+        height: 37px;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 10px 0 9px 10px;
+        background-image: linear-gradient(to right, rgb(36, 40, 48), rgb(113, 125, 150));
+    }
+
+    .nav_right>input {
+
+        color: white;
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .nav_right>input::placeholder {
+        opacity: 0.7;
+        font-size: 16px;
+        color: white;
+        padding-bottom: 10px;
+
+    }
+
+    .nav_font:hover {
+        text-decoration: underline;
+
+    }
+
+    .타이틀 {
+        margin-top: 150px;
+        height: 289px;
+        width: 1500px;
+        background-color: rgba(40, 47, 61, 0.95);
+
+    }
+
+    main>div {
+        width: 1500px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    main>div:nth-child(1)>.타이틀>h1 {
+        font-size: 55px;
+        color: white;
+        margin: 50px 0 0 320px;
+        font-weight: normal;
+
+    }
+
+    main>div:nth-child(1)>.타이틀>h2 {
+        font-size: 25px;
+        color: white;
+        font-weight: lighter;
+        margin: 0 0 50px 320px;
+    }
+
+    main>div:nth-child(1)>.타이틀>.버튼 {
+        font-size: 23px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 80px;
+        height: 40px;
+        line-height: 40px;
+        color: white;
+        background-color: rgb(140, 105, 153);
+        border-radius: 10px;
+        margin-left: 320px;
+        border: none;
+    }
+
+    main>div:nth-child(1)>.타이틀>.버튼:hover {
+        background-color: rgb(152, 116, 164);
+    }
+
+    main>div:nth-child(2) {
+        display: flex;
+        width: 1281px;
+        margin: 50px auto 5px;
+        justify-content: center;
+    }
+
+    main>div:nth-child(3) {
+        display: flex;
+        width: 1281px;
+        margin: 5px auto;
+        justify-content: center;
+    }
+
+    .중간컨텐츠 {
+        display: flex;
+        width: 1281px;
+        height: 936px;
+        margin-bottom: 5px;
+    }
+
+    .중간컨텐츠>.상세설명 {
+        width: 803px;
+        height: 930px;
+        background-color: rgba(0, 0, 139, 0.1);
+        border-radius: 10px;
+
+    }
+
+    .중간컨텐츠>.상세설명>.이미지 {
+        width: 790px;
+        height: 516px;
+    }
+
+    .중간컨텐츠>.상세설명>.이미지 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .중간컨텐츠>.상세설명>.설명텍스트박스 {
+        width: 790px;
+        height: 421px;
+        border: 1px transparent;
+        border-radius: 10px;
+        background-color: rgba(40, 47, 61, 0.95);
+        color: white;
+        padding: 10px;
+    }
+
+    .중간컨텐츠 .추가설명 {
+        width: 490px;
+        height: 936px;
+        background-color: rgba(40, 47, 61, 0.95);
+        color: white;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .중간컨텐츠>.추가설명>.인증사진박스 {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    .중간컨텐츠>.추가설명 h2 {
+        margin-bottom: 20px;
+    }
+
+    .중간컨텐츠>.추가설명 a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .중간컨텐츠>.추가설명>.추가설명제목 {
+        font-size: 26px;
+    }
+
+    .중간컨텐츠>.추가설명 a {
+        color: rgba(216, 182, 255)
+    }
+
+    .중간컨텐츠>.추가설명 a:hover {
+        color: rgb(152, 116, 164)
+    }
+
+    .review-div {
+        display: flex;
+        width: 1280px;
+        height: 300px;
+        color: white;
+        border: 1px solid transparent;
+        background-color: rgba(40, 47, 61, 0.95);
+        justify-content: space-evenly;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .review-div>.review {
+        border: 1px solid;
+        border-radius: 10px;
+        width: 400px;
+        height: 260px;
+    }
+
+    .review-div>.review>.user {
+        font-size: 20px;
+        margin: 16px 20px;
+    }
+
+    .review-div>.review>.text {
+        margin: 16px 20px;
+    }
+
+    .review-div>.review>.grade {
+        color: gold;
+        font-size: 18px;
+        margin: 16px 18px;
+    }
+}
+
+/* ---------------------반응형 스타일 태그------------------------------ */
+@media(max-width: 910px) {
+    /*모바일 화면 검색바*/
+
+    /* nav */
+    .nav_area {
+        position: relative;
+        /* z-index: 1; */
+
+        top: -30px;
+        /* left: auto; */
+        height: 259px;
+        width: 100%;
+        /* top: 100px; */
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+
+
+    }
+
+    .nav_area>.nav {
+        display: flex;
+        /* margin-top: 63px; */
+        height: 75px;
+        width: 1262px;
+        z-index: 2;
+    }
+
+
+    .nav_area>.nav_color {
+        position: absolute;
+        border: 1px solid;
+        border-radius: 10px;
+        border-color: transparent;
+        margin-top: 63px;
+        height: 75px;
+        width: 1262px;
+        background-image: linear-gradient(to right, rgb(10, 12, 37), rgb(77, 91, 119));
+        opacity: 0.9;
+    }
+
+    .nav_area>.nav>.nav_left {
+        width: 940px;
+        height: 75px;
+        display: flex;
+        /* background-color: aqua; */
+        justify-content: space-evenly;
+        padding: 0 10px 0 25px;
+        margin-right: 15px;
+    }
+
+    .nav_area>.nav>.nav_left>.nav_font {
+        font-size: 20px;
+        color: white;
+        margin: 1px;
+        padding: 20px 0 0 0;
+        opacity: 1;
+        display: flex;
+
+    }
+
+    .nav_area>.nav>.nav_right {
+        width: 340px;
+        height: 73px;
+        display: flex;
+        margin-top: 1px;
+        align-items: center;
+    }
+
+    .nav_area>.nav>.nav_right>.search_box {
+
+        width: 300px;
+        height: 37px;
+        border: 1px solid;
+        border-radius: 10px;
+        padding: 10px 0 9px 10px;
+        background-image: linear-gradient(to right, rgb(36, 40, 48), rgb(113, 125, 150));
+    }
+
+    .nav_right>input {
+
+        color: white;
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .nav_right>input::placeholder {
+        opacity: 0.7;
+        font-size: 16px;
+        color: white;
+        padding-bottom: 10px;
+
+    }
+
+    .nav_font:hover {
+        text-decoration: underline;
+
+    }
+
+    .nav_area {
+        position: relative;
+        /* top: 70px; */
+        /* left: 0; */
+        width: 100%;
+        height: 80px;
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav_area .nav {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0;
+        height: 80px;
+        z-index: 2;
+
+    }
+
+    .nav_area .nav_left,
+    .nav_area .nav_color,
+    .nav_area .nav_font {
+        display: none !important;
+    }
+
+
+    .nav_area .nav_right {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_area .search_box {
+        width: 80%;
+        height: 40px;
+        margin: 5px 0;
+    }
+
+    .slider-container {
+        margin-top: 130px;
+        /* 네비게이션 높이만큼 여백 줌 */
+    }
+
+    main {
+        margin-top: 60px;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 60px;
+
+    }
+
+    .wrapper {
+        margin-top: 100px;
+    }
+
+    main>div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        background-color: rgb(28, 32, 44);
+    }
+
+
+
+
+    .nav_right>input {
+        width: 30px;
+        display: block;
+        color: white;
+        font-size: 16px;
+        align-items: center;
+    }
+
+    .nav_right>input::placeholder {
+        opacity: 0.7;
+        font-size: 16px;
+        color: white;
+        padding-bottom: 10px;
+    }
+
+    .타이틀 {
+        width: 100vw;
+        height: 289px;
+        background-color: rgba(40, 47, 61, 0.95);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 10px;
+    }
+
+
+
+    .타이틀>h1 {
+        font-size: 25px;
+        color: white;
+        margin: 0 auto;
+        font-weight: normal;
+    }
+
+    .타이틀>h2 {
+        font-size: .7em;
+        color: white;
+        font-weight: lighter;
+        margin: 0 auto;
+    }
+
+    .타이틀>.버튼 {
+        font-size: 23px;
+        text-align: center;
+        display: flex;
+        width: 80px;
+        line-height: 40px;
+        height: 40px;
+        color: white;
+        background-color: rgb(140, 105, 153);
+        border-radius: 10px;
+        padding-left: 20px;
+        margin-top: 1em;
+        border: none;
+    }
+
+    .타이틀>.버튼:hover {
+        background-color: rgb(152, 116, 164);
+    }
+
+    .중간컨텐츠 {
+        gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        height: auto;
+        margin: 0 auto 30px;
+
+    }
+
+    .중간컨텐츠>.상세설명 {
+        width: 803px;
+        height: 930px;
+        border-radius: 10px;
+
+    }
+
+    .중간컨텐츠>.상세설명>.이미지 {
+        width: 100%;
+        margin: 30px 0;
+        min-width: 500px;
+    }
+
+    .중간컨텐츠>.상세설명>.이미지 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .중간컨텐츠>.상세설명>.설명텍스트박스 {
+        width: 100%;
+        min-width: 400px;
+        height: 421px;
+        border: 1px transparent;
+        border-radius: 10px;
+        background-color: rgba(40, 47, 61, 0.95);
+        color: white;
+        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .중간컨텐츠 .추가설명 {
+        width: 100%;
+        height: 936px;
+        background-color: rgba(40, 47, 61, 0.95);
+        color: white;
+        padding: 30px;
+        border-radius: 10px;
+    }
+
+    .중간컨텐츠>.추가설명>.인증사진박스 {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    .추가설명>.추가설명텍스트박스 {
+
+        padding-left: 40px;
+
+    }
+
+    .중간컨텐츠>.추가설명 h2 {
+        margin-bottom: 20px;
+    }
+
+    .중간컨텐츠>.추가설명 a {
+        color: white;
+        text-decoration: none;
+        color: rgba(216, 182, 255);
+    }
+
+    .중간컨텐츠>.추가설명 a:hover {
+        color: rgb(152, 116, 164);
+    }
+
+    .중간컨텐츠>.추가설명>.추가설명제목 {
+        font-size: 26px;
+    }
+
+    .review-div {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+        width: 680px;
+        max-width: 1280px;
+        height: auto;
+        margin: 0 auto;
+        color: white;
+        border: 1px solid transparent;
+        background-color: rgba(40, 47, 61, 0.95);
+        justify-content: space-evenly;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .review-div>.review {
+        border: 1px solid;
+        border-radius: 10px;
+        width: 90%;
+        height: 260px;
+        margin-bottom: 1em;
+    }
+
+    .review-div>.review>.user {
+        font-size: 20px;
+        margin: 16px 20px;
+    }
+
+    .review-div>.review>.text {
+        margin: 16px 20px;
+    }
+
+    .review-div>.review>.grade {
+        color: gold;
+        font-size: 18px;
+        margin: 16px 18px;
+    }
+}

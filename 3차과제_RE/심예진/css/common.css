@@ -1,0 +1,378 @@
+/* 공통영역 */
+
+* {
+    box-sizing: border-box;
+}
+
+/* common */
+* {
+    box-sizing: border-box;
+}
+
+/* common */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (min-width:910px) {
+    body {
+        margin: 0;
+        background-color: rgba(28, 32, 44, 0.507);
+    }
+
+    /* 로고이미지 */
+    .logo {
+        position: relative;
+        background-image: url(../css/Logo1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 90px;
+        height: 90px;
+    }
+    /* layout */
+    .wrapper {
+        
+        background-image: url(../css/Backgraund_img.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% 100%;
+    }
+
+    /* 브라우저 헤더 */
+
+    /* header */
+    .wrapper>header>nav {
+        
+        justify-content: center;
+        display: flex;
+        background-color: #1a202c;
+    }
+
+    .wrapper>header>div>ul>li>a {
+        line-height: 50px;
+        display: flex;
+        margin: 40px 60px 0 60px;
+    }
+
+    /* main-menu */
+    .wrapper>header>nav>.main-menu {
+        height: 120px;
+        width: 1440px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .wrapper>header>nav>.main-menu>.L3button {
+        display: none;
+    }
+
+    .wrapper>header>nav>.main-menu>ul {
+        display: flex;
+    }
+    .wrapper>header>nav>.main-menu>ul>li{
+        position: relative;
+    }
+
+
+    .wrapper>header>nav>.main-menu>ul:nth-child(0)>li>a {
+        display: block;
+        line-height: 50px;
+        margin: 40px 60px 0 60px;
+    }
+    .wrapper>header>nav>.main-menu>ul:nth-child(1)>li>a {
+        display: block;
+        line-height: 50px;
+        margin: 40px 60px 0 60px;
+    }
+
+    .wrapper>header>nav>.main-menu>ul:nth-child(2)>li>a {
+        display: block;
+        line-height: 50px;
+        min-width: 100px;
+        margin: 40px 20px 0 20px;
+    }
+    .wrapper>header>nav>.main-menu>ul:nth-child(3)>li:nth-child(1)>a {
+        display: block;
+        line-height: 50px;
+        margin: 40px 20px 0 20px;
+        min-width: 57px;
+
+    }
+    .wrapper>header>nav>.main-menu>ul:nth-child(3)>li:nth-child(2)>a  {
+        display: block;
+        line-height: 50px;
+        margin: 40px 60px 0 20px;
+        min-width: 57px;
+
+    }
+
+
+    .wrapper>header>nav>.main-menu>ul>li>a.logo {
+        margin: 20px 60px 20px 20px;
+    }
+
+
+    /* Sub-menu */
+    .wrapper>header>nav>.main-menu>ul>li>ul.sub-menu {
+        position: absolute;
+        z-index: 9999;
+        left: auto;
+        width: 200px;
+        top: 80px;
+        display: none;
+        margin-left: 15px;
+        background-color: white;
+        border: 1px solid rgba(128, 128, 128, 0.3);
+        
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+
+    }
+
+    .wrapper>header>nav>.main-menu>ul>li>ul.sub-menu>li {
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+        position: relative;
+        top: 4px;
+        margin-left: 5px;
+    }
+
+    .wrapper>header>nav>.main-menu>ul>li>ul.sub-menu>li>a {
+        display: block;
+    }
+
+    .wrapper>header>nav>.main-menu>ul>li:hover>.sub-menu {
+        display: block;
+    }
+
+
+    /* footer */
+    footer {
+        height: 185px;
+        background-color: rgb(28, 32, 44);
+        display: flex;
+        justify-content: center;
+    }
+
+    footer>div.footer_main {
+        display: flex;
+        justify-content: space-between;
+        width: 1280px;
+        height: 185px;
+    }
+
+    /* Footer_F1 */
+    footer>div>div.F1 {
+        width: 20%;
+        height: 185px;
+    }
+
+    footer>div>div.F1>ul>li {
+        display: flex;
+        flex-direction: column;
+        width: 134px;
+        height: 100%;
+        margin: 11px 0 0 11px;
+    }
+
+    footer>div>div.F1>ul>li>a.logo {
+        width: 134px;
+        height: 131px;
+    }
+
+    footer>div>div.F1>ul>li>a.team {
+        width: 68px;
+        height: 21px;
+        color: white;
+        font-size: 14px;
+        margin: auto;
+    }
+
+    /* Footer_F2 */
+    footer>div>div.F2 {
+        width: 500px;
+        padding: 135px 0 0 0;
+    }
+
+    footer>div>div.F2>ul {
+        display: flex;
+        width: 454px;
+        height: 21px;
+        justify-content: space-between;
+    }
+
+    footer>div>div.F2>ul>li>a {
+        color: rgb(160, 171, 192);
+        font-size: 14px;
+    }
+
+
+
+}
+
+/* 스마트폰 헤더 */
+@media screen and (max-width:910px) {
+
+    body {
+        
+        margin: 0;
+        background-color: rgb(28, 32, 44);
+    }
+
+    /* 로고이미지 */
+    .logo {
+        background-image: url(../css/Logo1.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 36px;
+        width: 150px;
+        margin: 0;
+        border: 1px solid white;
+        border-radius: 20px;
+        box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    /* layout */
+    .wrapper {
+        background-image: none;
+        
+    }
+
+    /* header */
+    .wrapper>header{
+        position: fixed;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        z-index: 2;
+    }
+    .wrapper>header>nav {
+        position: relative;
+        justify-content: center;
+        display: flex;
+        background-color: rgb(32, 42, 62);
+    }
+
+    /* main-menu */
+    .wrapper>header>nav>.main-menu {
+        height: 60px;
+        width: 910px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        box-shadow: 10px 10px rgba(255, 255, 0, 0);
+    }
+
+    .wrapper>header>nav>.main-menu>.L3button {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        padding: 5px 0;
+    }
+
+    .wrapper>header>nav>.main-menu>.L3button>.line {
+        width: 40px;
+        height: 4px;
+        background-image: linear-gradient(to top, white 70%, gray);
+        border-radius: 2px;
+    }
+
+    .wrapper>header>nav>.main-menu>.L3button:checked {}
+
+    .wrapper>header>nav>.main-menu>ul:nth-child(3) {
+        display: none;
+    }
+
+    .wrapper>header>nav>.main-menu>ul:nth-child(2) {
+        display: flex;
+    }
+
+    .wrapper>header>nav>.main-menu>ul:nth-child(2)>li {
+        display: none;
+    }
+
+    .wrapper>header>nav>.main-menu>ul:nth-child(2)>li:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85vw;
+    }
+
+
+
+
+    .wrapper>header>nav>.main-menu>ul>li>a {
+    }
+
+
+    /* Sub-menu */
+    .wrapper>header>nav>.main-menu>ul>li>ul.sub-menu {
+        position: absolute;
+        z-index: 9999;
+        left: auto;
+        width: 200px;
+        top: 80px;
+        display: none;
+        margin: 0 0 0 50px;
+        background-color: white;
+        border: 1px solid rgba(68, 24, 24, 0.3);
+        
+    }
+
+    .wrapper>header>nav>.main-menu>ul>li>ul.sub-menu>li {
+        height: 50px;
+        line-height: 50px;
+        padding: 0 20px;
+        position: relative;
+        top: 4px;
+    }
+
+    .wrapper>header>nav>.main-menu>ul>li>ul.sub-menu>li>a {
+        display: block;
+    }
+
+    .wrapper>header>nav>.main-menu>ul>li:hover>.sub-menu {
+        display: block;
+    }
+
+    /* footer */
+    footer {
+        height: 185px;
+        background-color: rgb(28, 32, 44);
+        display: flex;
+        justify-content: center;
+    }
+    footer>div.footer_main {
+        display: flex;
+        justify-content: space-between;
+        width: 1280px;
+        height: 185px;
+    }
+    footer>div>div{
+        display: none;
+    }
+}
+
+
+
+
+
+/* content */
+.content_main {
+    margin-left: auto;
+    margin-right: auto;
+}

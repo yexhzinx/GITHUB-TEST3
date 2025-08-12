@@ -1,0 +1,249 @@
+/* 공통영역 */
+
+* {box-sizing: border-box;}
+        /* common */
+        a {text-decoration: none;color: black;}
+        ul {list-style: none;margin: 0;padding: 0;}
+        body {margin: 0;}
+        .logo {
+            position: relative;
+            background-image: url(./Logo1.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 90px;
+            height: 90px; 
+        }
+
+        /* layout */
+        .wrapper{
+            position: absolute;
+            height: 1440px;
+            background-image: url(./Backgraund_img.jpg);
+            background-position: center;
+        }
+        
+        /* header */
+        .wrapper>header {
+            height: 120px;
+            width: 1920px;
+        }
+        .wrapper>header>nav {
+            position: relative;
+            height: 100%;
+            width: 1920px;
+            padding: 0 10px;
+            background-color: #1a202c;
+            margin: auto;
+        }
+        .wrapper>header>div>ul>li>a {
+            line-height: 50px;
+            display: flex;
+            margin: 40px 60px 0 60px;
+        }
+        
+        /* main-menu */
+        .wrapper>header>nav>ul.main-menu {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            width: 100px;
+            height: 100%;
+            margin-left: 350px;
+            margin-right: 90px;
+            padding: 0 20px;
+            left: 0;
+            top: 0;
+        }
+        
+        .wrapper>header>nav>ul.main-menu>li>a {
+            line-height: 50px;
+            display: flex;
+            margin: 40px 60px 0 60px;
+        }
+        .wrapper>header>nav>ul.main-menu>a.sign-in {
+            width: 51px;
+        }
+        .wrapper>header>nav>ul.main-menu>li>a.logo {
+            margin: 20px;
+        }
+        .loge_mp{
+            margin : 30px auto 60px;
+            padding: 190px 430px 300px 190px;
+        }
+        .login {
+            position: absolute;
+            top: 50px;
+            left: 1000px;
+        }
+        .sign-in {
+            position: absolute;
+            top: 50px;
+            left:1100px;
+        }
+        
+        /* Sub-menu */
+        .wrapper>header>nav>ul.main-menu>li>ul.sub-menu {
+            position: absolute;
+            z-index: 9999;
+            left: auto;
+            width: 200px;
+            top: 80px;
+            display: none;
+            margin: 0 0 0 50px;
+            background-color: white;
+            border: 1px solid rgba(128, 128, 128, 0.3);
+        }
+        .wrapper>header>nav>ul.main-menu>li>ul.sub-menu>li {
+            height: 50px;
+            line-height: 50px;
+            padding: 0 20px;
+            position: relative;
+            top: 4px;
+        }
+        .wrapper>header>nav>ul.main-menu>li>ul.sub-menu>li>a {
+            display: block;
+        }
+        .wrapper>header>nav>ul.main-menu>li:hover>.sub-menu {
+            display: block;
+        }
+
+        /* content */
+        /* .content_main{
+            display:flex;
+            justify-content: space-between;
+            flex-direction: column;
+            position: relative;
+            width:1280px;
+            height : 1075px;
+            background-color: rgb(28,32,44);
+        }
+        .content_email{
+            width:480px;
+            height : 48px;
+            background-color: rgb(45,54,72);
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            padding-left: 15px;
+            letter-spacing: 2px;
+        }
+        .content_main_checkbox{
+            background-color: rgb(51,51,51);
+            width:478px;
+            height : 94px;
+            border: 1px solid white;
+            border-radius: 5px;
+            display: flex;
+        }
+        .content_main_checkbox>samp{
+            color: rgb(160,171,192);
+            height : 96px;
+            width: 300px;
+            line-height: 96px;
+            font-size: 24px;
+        }
+        .content_main_checkbox>input[type="checkbox"]{
+            width:50px;
+            height : 50px;
+            margin: 23px 17px 23px 23px;
+        }
+        .content_sub_checkbox{
+            display: flex;
+            width:750px;
+            height : 24px;
+        }
+        .content_sub_checkbox>input[type="checkbox"]{
+            height: 24px;
+            width: 24px;
+            margin: 0 12px 0 0;
+            padding: 0;
+        }
+        .content_main_checkbox>.icon{
+            width:50px;
+            height : 50px;
+            background-image: url(./loge_icon.png);
+            background-size: cover;
+            margin: auto;
+        }
+        .content_sub_checkbox>p{
+            padding-bottom: 15px;
+        }
+        .content_next{
+            background-image: linear-gradient(to right, rgb(60,161,240), rgb(36,96,208));
+            width:160px;
+            height : 40px;
+            border-radius: 5px;
+            border-bottom: white;
+            color: white;
+            font-size: 24px;
+            line-height: 10px;
+        }
+        .content_margin32{
+            height: 32px;
+            width: auto;
+        }
+        .content_margin40{
+            height: 40px;
+            width: auto;
+        }
+        .content_margin53{
+            height: 53px;
+            width: auto;
+        }
+        .font_48{
+            color: rgb(160,171,192);
+            font-size: 48px;
+            margin: 0;
+            padding: 0;
+        }
+        .font_16{
+            color: rgb(160,171,192);
+            font-size: 16px;
+            padding: 0;
+        }
+        .font_24{
+            color: rgb(160,171,192);
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        } */
+
+        /* footer */
+        .footer_main{
+            position: relative;
+            width: 1920px;
+            height: 185px;
+            background-color: rgb(28,32,44);
+            margin: 60px auto 0;
+        }
+        .footer_main>ul{
+            position: relative;
+            width: 1920px;
+            height: 185px;
+            background-color: rgb(28,32,44);
+            margin: 60px auto 0;
+        }
+        .footer_main>ul>li{
+            position: relative;
+            width: 1920px;
+            height: 185px;
+            background-color: rgb(28,32,44);
+            margin: 60px auto 0;
+        }
+        .footer_main>ul>li>a{
+            position: relative;
+            width: 1920px;
+            height: 185px;
+            background-color: rgb(28,32,44);
+            margin: 60px auto 0;
+        }
+        .footer_main>ul>li>a.logo{
+            position: relative;
+            width: 1920px;
+            height: 185px;
+            background-color: rgb(28,32,44);
+            margin: 60px auto 0;
+        }
+ 
+    

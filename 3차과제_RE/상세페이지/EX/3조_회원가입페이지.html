@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: white
+        }
+
+        .top-header {
+            background-image: url(https://file.cafe24cos.com/banner-admin-live/upload/lakai1922/a234b13c-5727-4a99-b1e2-30dd2454a167.png);
+            height: 200px;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: white;
+        }
+
+
+        .wrapper{
+            position: absolute;
+            height: 1440px;
+            background-image: url(./Backgraund_img.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .wrapper>header {
+            height: 120px;
+            width: 1920px;
+        }
+
+
+        .wrapper>header>nav {
+
+            position: relative;
+            height: 100%;
+            width: 1920px;
+            padding: 0 10px;
+            background-color: #1a202c;
+            margin: auto;
+        }
+
+
+        .wrapper>header>nav>ul.tag {
+            position: absolute;
+            top: 12px;
+            left: 1620px;
+        }
+
+        .wrapper>header>nav>ul.main-menu {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            width: 100px;
+            height: 100%;
+            margin-left: 350px;
+            margin-right: 90px;
+            padding: 0 20px;
+            left: 0;
+            top: 0;
+        }
+
+        .wrapper>header>nav>ul.main-menu>li {
+
+
+        }
+        
+        .wrapper>header>nav>ul.main-menu>li>a {
+            line-height: 50px;
+            display: flex;
+            margin: 40px 60px 0 60px;
+        }
+        .wrapper>header>nav>ul.main-menu>a.sign-in {
+
+            width: 51px;
+        }
+        .wrapper>header>nav>ul.main-menu>li>a.logo {
+            margin: 20px;
+        }
+
+        .wrapper>header>nav>ul.main-menu>li>ul.sub-menu {
+            position: absolute;
+            z-index: 9999;
+            left: auto;
+            width: 200px;
+            top: 80px;
+            display: none;
+            margin: 0 0 0 50px;
+            background-color: white;
+            border: 1px solid rgba(128, 128, 128, 0.3);
+        }
+
+        .wrapper>header>nav>ul.main-menu>li>ul.sub-menu>li {
+
+            height: 50px;
+            line-height: 50px;
+            padding: 0 20px;
+            position: relative;
+            top: 4px;
+        }
+
+        .wrapper>header>nav>ul.main-menu>li>ul.sub-menu>li>a {
+            display: block;
+        }
+
+        .wrapper>header>nav>ul.main-menu>li:hover>.sub-menu {
+            display: block;
+        }
+
+        .logo {
+            position: relative;
+            background-image: url(./Logo1.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 90px;
+            height: 90px; 
+
+    }
+
+        .font_48{
+            color: rgb(160,171,192);
+            font-size: 48px;
+            margin: 0;
+            padding: 0;
+        }
+        .font_16{
+            color: rgb(160,171,192);
+            font-size: 16px;
+            padding: 0;
+        }
+        .font_24{
+            color: rgb(160,171,192);
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+
+
+
+        .footer_main{
+            position: relative;
+            width: 1920px;
+            height: 185px;
+            background-color: rgb(28,32,44);
+            margin: 60px auto 0;
+        }
+        .content_main{
+            display:flex;
+            justify-content: space-between;
+            flex-direction: column;
+            position: relative;
+            width:1280px;
+            height : 1075px;
+            background-color: rgb(28,32,44);
+        }
+
+        /* .content_sub{} */
+
+        .content_email{
+            width:480px;
+            height : 48px;
+            background-color: rgb(45,54,72);
+            border-radius: 5px;
+            color: white;
+            font-size: 20px;
+            padding-left: 15px;
+            letter-spacing: 2px;
+        }
+        .content_main_checkbox{
+            background-color: rgb(51,51,51);
+            width:478px;
+            height : 94px;
+            border: 1px solid white;
+            border-radius: 5px;
+            display: flex;
+        }
+        .content_main_checkbox>samp{
+            color: rgb(160,171,192);
+            height : 96px;
+            width: 300px;
+            line-height: 96px;
+            font-size: 24px;
+        }
+        .content_main_checkbox>input[type="checkbox"]{
+            width:50px;
+            height : 50px;
+            margin: 23px 17px 23px 23px;
+        }
+        .content_sub_checkbox{
+            display: flex;
+            width:750px;
+            height : 24px;
+        }
+        .content_sub_checkbox>input[type="checkbox"]{
+            height: 24px;
+            width: 24px;
+            margin: 0 12px 0 0;
+            padding: 0;
+        }
+        .content_main_checkbox>.icon{
+            width:50px;
+            height : 50px;
+            background-image: url(./loge_icon.png);
+            background-size: cover;
+            margin: auto;
+
+        }
+        .content_sub_checkbox>p{
+            padding-bottom: 15px;
+        }
+        .content_next{
+            background-image: linear-gradient(to right, rgb(60,161,240), rgb(36,96,208));
+            width:160px;
+            height : 40px;
+            border-radius: 5px;
+            border-bottom: white;
+            color: white;
+            font-size: 24px;
+            line-height: 10px;
+        }
+
+
+        .content_margin32{
+            height: 32px;
+            width: auto;
+        }
+        .content_margin40{
+            height: 40px;
+            width: auto;
+        }
+        .content_margin53{
+            height: 53px;
+            width: auto;
+        }
+
+        .loge_mp{
+            margin : 30px auto 60px;
+            padding: 190px 430px 300px 190px;
+        }
+
+        
+
+        .login {
+            position: absolute;
+            top: 50px;
+            left: 1000px;
+        }
+        
+
+        .sign-in {
+            position: absolute;
+            top: 50px;
+            left:1100px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <!-- <div class="top-header"></div> -->
+            <nav>
+                <ul class="main-menu">
+                    <li>
+                    <a class="logo" href="javascript:void(0)"></a>
+                    <!-- <img src="./Logo1.png" alt="로고"> -->
+
+                    </li>
+
+
+                    <li>
+                        <a style="color: white;" href="javascript:void(0)">ALL</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)">Home</a></li>
+                            <li><a href="javascript:void(0)">Discovery Queue</a></li>
+                            <li><a href="javascript:void(0)">Wishlist</a></li>
+                            <li><a href="javascript:void(0)">Pointsshop</a></li>
+                            <li><a href="javascript:void(0)">News</a></li>
+                            <li><a href="javascript:void(0)">stats</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a style="color: white;" href="javascript:void(0)">Event</a>
+                        <ul class="sub-menu">
+                            <li><a href="javascript:void(0)">Home</a></li>
+                            <li><a href="javascript:void(0)">Discussion</a></li>
+                            <li><a href="javascript:void(0)">Workshop</a></li>
+                            <li><a href="javascript:void(0)">Market</a></li>
+                            <li><a href="javascript:void(0)">Broadcast</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a style="color: white;" href="javascript:void(0)">About</a>
+
+                    </li>
+                    <li>
+                        <a style="color: white;" href="javascript:void(0)">Support </a>
+                    </li>
+                    <a class="login" style="color: white;" href="javascript:void(0)">login</a>
+                    <a class="sign-in" style="color: white;" href="javascript:void(0)">sign-in</a>
+                </ul>
+
+            </nav>
+            <div class="content_main loge_mp">
+                <ul>
+                    <li class="font_48">계정만들기</li>
+                </ul>
+                <div class="content_margin53"></div>
+                <ul>
+                    <li class="font_16">이메일 주소</li>
+                </ul>
+                <input class="content_email" type="email">
+                <div class="content_margin53"></div>
+                <ul>
+                    <li class="font_16">이메일 주소 다시 입력</li>
+                </ul>
+                <input class="content_email" type="email">
+                <div class="content_margin32"></div>
+                <div class="content_main_checkbox">
+                    <input type="checkbox">
+                    <samp>사람입니다.</samp>
+                    <samp class="icon"></samp>
+                </div>
+                <div class="content_margin40"></div>
+                <div class="content_sub_checkbox">
+                    <input class="input_checkbox" type="checkbox">
+                    <div class="font_16">본인은 만 13세 이상이며 Ubiquitous 이용약관 및 팀_3조의 개인정보 처리방침에 동의합니다.</div>
+                </div>
+                <div class="content_margin40"></div>
+                <button class="content_next">계속</button>
+            </div>
+            <div class="footer_main">
+            </div>
+        </header>
+ 
+
+    </div>
+</body>
+
+</html>
